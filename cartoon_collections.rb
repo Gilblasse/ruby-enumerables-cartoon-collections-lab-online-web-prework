@@ -21,6 +21,6 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  puts array
- p cheese_types.reduce {|item| array.find{|val| item == val}}
+  find = cheese_types.map {|item| item if array.include?(item)}.compact
+	find.size > 0 ? find[0] : nil
 end
