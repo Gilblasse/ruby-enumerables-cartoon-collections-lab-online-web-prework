@@ -21,5 +21,5 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.reduce {|item| array.find{|val| item == val}}
+  puts cheese_types.reduce {|item| array.find{|val| item == val}}
 end
