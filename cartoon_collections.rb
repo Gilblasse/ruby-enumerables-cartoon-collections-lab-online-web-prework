@@ -21,6 +21,5 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.collect {|item| array.select{|val| item == val}.reduce}.compact
-    .reduce
+  cheese_types.collect {|item| array.select{|val| item == val}.reduce}.compact.reduce
 end
