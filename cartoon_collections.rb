@@ -22,5 +22,5 @@ end
 def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  binding.pry
+  cheese_types.collect {|item| array.map{|val| val if item == val}}
 end
